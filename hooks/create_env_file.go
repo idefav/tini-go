@@ -11,7 +11,7 @@ type CreateAppEnvHook struct {
 }
 
 func (c *CreateAppEnvHook) Name() string {
-	return "create_app_env"
+	return "create_env_file"
 }
 
 func (c *CreateAppEnvHook) Exec() {
@@ -19,7 +19,7 @@ func (c *CreateAppEnvHook) Exec() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	f, err := os.Create("/data/appenv")
+	f, err := os.Create("/data/env")
 	if err != nil {
 		log.Fatal(err)
 	}
