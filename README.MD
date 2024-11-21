@@ -1,5 +1,7 @@
 # tini Go 版本实现
 
+C语言版本: https://github.com/krallin/tini
+
 ## 1. 构建
 ```bash
 make
